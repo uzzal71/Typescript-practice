@@ -1,2 +1,7 @@
 console.log("hello world");
-console.log("uzzal");
+const user = {
+  name: "Uzzal Kumar Roy",
+  age: 25,
+};
+console.log(user);
+
