@@ -33,3 +33,28 @@ let difference = new Set([...a].filter(x => !b.has(x)))
 log(difference);
 
 // WeakSet
+const ws = new WeakSet([{a: 1}, {b: 2}]);
+ws.add({ a: 1 });
+log(ws);
+
+const weakSet = new WeakSet();
+
+class SomeClass {
+    constructor() {
+        weakSet.add(this);
+    }
+
+    method() {
+        if (!weakSet.has(this)) {
+            throw new Error("You cannot access this method directly!");
+        } else {
+            return "i am method";
+        }
+    }
+}
+
+const someObj = new SomeClass();
+// a.method();
+
+// log(SomeClass.prototype.method());
+log(someObj.method());
