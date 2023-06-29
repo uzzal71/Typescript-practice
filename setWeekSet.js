@@ -31,3 +31,5 @@ log(intersection);
 
 let difference = new Set([...a].filter(x => !b.has(x)))
 log(difference);
+
+// WeakSet
