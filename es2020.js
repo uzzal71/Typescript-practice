@@ -64,8 +64,21 @@
 //     add();
 //     remove();
 // })();
+
 // import('./utils.js')
 //     .then(({add, remove}) => {
 //         add();
 //         remove();
 //     });
+
+// promise.allSettled() ***
+// const promise1 = new Promise(resolve => resolve("Barger"));
+// const promise2 = new Promise((_, reject) => reject("Apple"));
+// const promise3 = new Promise(resolve => resolve("Cake"));
+
+// Promise.all([promise1, promise2, promise3])
+//     .then(response => console.log(response))
+//     .catch(error => console.log(error));
+
+// Promise.allSettled([promise1, promise2, promise3])
+//     .then(response => console.log(response));
