@@ -30,15 +30,15 @@
 // 10n === 10; // false
 
 // Optional Chaining ***
-const language = {
-    name: 'JavaScript',
-    creator: 'Brendan Eich',
-    library: {
-        react: {
-            company: 'Facebook'
-        }
-    }
-};
+// let language = {
+//     name: 'JavaScript',
+//     creator: 'Brendan Eich',
+//     library: {
+//         react: {
+//             company: 'Facebook'
+//         }
+//     }
+// };
 
 // let company = language.library.react.company;
 // let company = language && language.library && language.library.react && language.library.react.company ? language.library.react.company : undefined;
@@ -48,3 +48,13 @@ const language = {
 // let colors = ['red', 'greed', 'blue'];
 // colors = null;
 // console.log(colors?.[1]);
+
+// Nullish Coalescing Operator *** 
+// let language;
+// language = 0;
+// console.log( language ?? 'JavaScript' ); // JavaScript
+// console.log( language || 'JavaScript' ); // JavaScript
+// NaN
+// JavaScript
+
+// 
