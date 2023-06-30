@@ -18,7 +18,7 @@
 // window === globalThis // true in browser
 // global === globalThis // true in node js
 
-// BigInt
+// BigInt ***
 // let largest_number = Number.MAX_SAFE_INTEGER;
 // largest_number += 1;
 // largest_number = BigInt(largest_number) +  1n;
@@ -29,3 +29,22 @@
 // 10n == 10; // true
 // 10n === 10; // false
 
+// Optional Chaining ***
+const language = {
+    name: 'JavaScript',
+    creator: 'Brendan Eich',
+    library: {
+        react: {
+            company: 'Facebook'
+        }
+    }
+};
+
+// let company = language.library.react.company;
+// let company = language && language.library && language.library.react && language.library.react.company ? language.library.react.company : undefined;
+// let company = language && language.library && language.library.react && language.library.react.company;
+// let company = language?.library?.react?.company;
+// console.log(company);
+// let colors = ['red', 'greed', 'blue'];
+// colors = null;
+// console.log(colors?.[1]);
